@@ -1,5 +1,6 @@
 from flask_jwt_extended import jwt_required
 
+# function
 def requires_auth(f):
     @jwt_required()
     def decorated_function(*args, **kwargs):
